@@ -1,0 +1,557 @@
+button {
+    margin: 2px;
+    
+  }
+  .custom-btn {
+    width: 150px;
+    height: 50px;
+    color: #000;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+  }
+
+  
+  
+/* 3 */
+.btn-3 {
+    background: goldenrod;
+    color: #fff;
+    width: 150px;
+    height: 50px;
+    line-height: 42px;
+    padding: 5px;
+    border: none;
+    
+  }
+  .btn-3 span {
+    position: relative;
+    display: block;
+    
+    width: 100%;
+    height: 100%;
+  }
+  .btn-3:before,
+  .btn-3:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+     background: goldenrod;
+    transition: all 0.3s ease;
+  }
+  .btn-3:before {
+    height: 0%;
+    width: 2px;
+    
+  }
+  .btn-3:after {
+    width: 0%;
+    height: 2px;
+  }
+  .btn-3:hover{
+     background: transparent;
+    box-shadow: none;
+  }
+  .btn-3:hover:before {
+    height: 100%;
+  }
+  .btn-3:hover:after {
+    width: 100%;
+  }
+  .btn-3 span:hover{
+     color: goldenrod;
+  }
+  .btn-3 span:before,
+  .btn-3 span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+     background: goldenrod;
+    transition: all 0.3s ease;
+  }
+  .btn-3 span:before {
+    width: 2px;
+    height: 0%;
+  }
+  .btn-3 span:after {
+    width: 0%;
+    height: 2px;
+  }
+  .btn-3 span:hover:before {
+    height: 100%;
+  }
+  .btn-3 span:hover:after {
+    width: 100%;
+  }
+  
+  
+
+
+.page-content {
+  display: grid;
+  grid-gap: 1rem;
+  padding: 1rem;
+  max-width: 1324px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  
+}
+@media (min-width: 600px) {
+  .page-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 800px) {
+  .page-content {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.btn {
+  cursor: pointer;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 0.025rem;
+  text-transform: uppercase;
+  color: #314d68;
+  background-color: black;
+  border: none;
+}
+.btn:hover {
+  background-color: #314d68;
+}
+.btn:focus {
+  outline: 1px dashed yellow;
+  outline-offset: 3px;
+}
+
+
+.testimonials {
+  padding: 100px 0;
+}
+.testimonials h3 {
+  margin-bottom: 20px;
+}
+.testimonials .card1 {
+  border-bottom: 3px #314d68 solid !important;
+  transition: 0.5s;
+  margin-top: 60px;
+}
+.testimonials .card1 i {
+  background-color: #314d68;
+  color: #ffffff;
+  width: 75px;
+  height: 75px;
+  line-height: 75px;
+  margin: -40px auto 0 auto;
+}
+
+.our-team {
+  padding: 30px 0 40px;
+  margin-bottom: 30px;
+  background-color: #f7f5ec;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.our-team .picture {
+  display: inline-block;
+  height: 130px;
+  width: 130px;
+  margin-bottom: 50px;
+  z-index: 1;
+  position: relative;
+}
+
+.our-team .picture::before {
+  content: "";
+  width: 100%;
+  height: 0;
+  border-radius: 50%;
+  background-color: #000;
+  position: absolute;
+  bottom: 135%;
+  right: 0;
+  left: 0;
+  opacity: 0.9;
+  transform: scale(3);
+  transition: all 0.3s linear 0s;
+}
+
+.our-team:hover .picture::before {
+  height: 100%;
+}
+
+.our-team .picture::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.our-team .picture img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  transform: scale(1);
+  transition: all 0.9s ease 0s;
+}
+
+.our-team:hover .picture img {
+  box-shadow: 0 0 0 14px #f7f5ec;
+  transform: scale(0.7);
+}
+
+.our-team .title {
+  display: block;
+  font-size: 15px;
+  color: #4e5052;
+  text-transform: capitalize;
+}
+
+.our-team .social {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #314d68;
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+  transition: all 0.5s ease 0s;
+}
+
+.our-team:hover .social {
+  bottom: 0;
+}
+
+.our-team .social li {
+  display: inline-block;
+}
+
+.our-team .social li a {
+  display: block;
+  padding: 10px;
+  font-size: 17px;
+  color: white;
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+}
+
+.our-team .social li a:hover {
+  color: #314d68;
+  background-color: #f7f5ec;
+}
+
+.scroll-left {
+  height: 50px; 
+  overflow: hidden;
+  position: relative;
+  background-color: #3a3b3c;
+  }
+  .scroll-left p {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-weight: bold;
+  background-color: #3a3b3c;
+  color: goldenrod;
+  line-height: 50px;
+  text-align: center;
+  /* Starting position */
+  -moz-transform:translateX(100%);
+  -webkit-transform:translateX(100%); 
+  transform:translateX(100%);
+  /* Apply animation to this element */ 
+  -moz-animation: scroll-left 22s linear infinite;
+  -webkit-animation: scroll-left 22s linear infinite;
+  animation: scroll-left 22s linear infinite;
+  }
+  /* Move it (define the animation) */
+  @-moz-keyframes scroll-left {
+  0% { -moz-transform: translateX(100%); }
+  100% { -moz-transform: translateX(-100%); }
+  }
+  @-webkit-keyframes scroll-left {
+  0% { -webkit-transform: translateX(100%); }
+  100% { -webkit-transform: translateX(-100%); }
+  }
+  @keyframes scroll-left {
+  0% { 
+  -moz-transform: translateX(100%); /* Browser bug fix */
+  -webkit-transform: translateX(100%); /* Browser bug fix */
+  transform: translateX(100%); 
+  }
+  100% { 
+  -moz-transform: translateX(-100%); /* Browser bug fix */
+  -webkit-transform: translateX(-100%); /* Browser bug fix */
+  transform: translateX(-100%); 
+  }
+  }
+
+  .landing-page{
+    background: url(/src/images/landing-bg-2.jpg);
+    background-size: cover;
+    padding-bottom: 150px;
+  }
+  .display-3{
+    color: #fff;
+  }
+  .lead{
+    color: gainsboro;
+  }
+  .golden-word{
+    color: goldenrod;
+  }
+  .paragraph{
+    color: #000;
+    font-size: 26px;
+   line-height: 45px;
+   font-weight: 400;
+  }
+  .paragraph-2{
+    color: #000;
+    font-size: 17px;
+   line-height: 25px;
+   font-weight: 400;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    
+  }
+  
+  /* td {
+    padding: 10px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom: 1px solid white;
+    
+  } */
+  
+  .first_column {
+    background-color: goldenrod;
+    color: white;
+    padding: 10px;
+    border-top-left-radius: 20px;
+    border-bottom: 1px solid white;
+  }
+
+  .last_column {
+    background-color: goldenrod;
+    color: white;
+    padding: 10px;
+    border-bottom-left-radius: 20px;
+    border-bottom: 1px solid white;
+  }
+  .yellow{
+    background-color: goldenrod;
+    color: white;
+    padding: 10px;
+    border-bottom: 1px solid white;
+  }
+  
+  .white {
+    background-color: gainsboro;
+    color: black;
+    padding: 10px;
+    border-bottom: 1px solid white;
+    
+  }
+  .secondrow_first_column{
+    background-color: gainsboro;
+    color: black;
+    padding: 10px;
+    border-top-right-radius: 20px;
+    border-bottom: 1px solid white;
+  }
+  .secondrow_last_column{
+    background-color: gainsboro;
+    color: black;
+    padding: 10px;
+    border-bottom-right-radius: 20px;
+    border-bottom: 1px solid white;
+  }
+    /* Style the cards */
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      padding: 16px;
+      text-align: center;
+      background-color: #f1f1f1;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    /* Create a two-column layout for desktop */
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    /* Create a column layout for mobile */
+    @media screen and (max-width: 600px) {
+      .row {
+        flex-direction: column;
+      }
+    }
+
+    /* Set the width of the cards on desktop */
+    @media screen and (min-width: 601px) {
+      .card {
+        width: 48%;
+      }
+    }
+
+    
+.accordion-animation-wrapper {
+  display: grid;
+  grid-template-rows: 0fr;
+  overflow: hidden;
+  border-radius: 20px;
+  transition: grid-template-rows var(--transitionLength) var(--transitionTiming);
+}
+
+.accordion-trigger-input:checked ~ .accordion-animation-wrapper {
+  grid-template-rows: 1fr;
+  border-radius: 20px;
+}
+
+.accordion-animation {
+  min-height: 0;
+}
+
+.accordion-transform-wrapper {
+  transform: translateY(-100%);
+  visibility: hidden;
+  transition: transform var(--transitionLength) var(--transitionTiming),
+    visibility 0s var(--transitionLength) var(--transitionTiming);
+}
+
+.accordion-trigger-input:checked
+  ~ .accordion-animation-wrapper
+  .accordion-transform-wrapper {
+  transform: translateY(0);
+  visibility: visible;
+  transition: transform var(--transitionLength) var(--transitionTiming),
+    visibility 0s linear;
+}
+
+/* Margins inside the container will throw animation height calculations off, better use paddings */
+.accordion-content * {
+  margin: 0;
+  
+}
+
+/* The styles */
+
+.accordion {
+  border-radius: 20px;
+  min-width: 310px;
+  width: 80%;
+  margin: 0 auto;
+  background: darkgrey;
+  
+}
+
+.accordion-item {
+ 
+  margin-bottom: -2px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.accordion-trigger-input {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.accordion-trigger {
+  display: block;
+  position: relative;
+  padding: 16px;
+  transition: box-shadow var(--transitionLength) var(--transitionTiming);
+  z-index: 1;
+  cursor: pointer;
+  
+}
+
+.accordion-trigger-input:focus-visible ~ .accordion-trigger {
+  outline: 2px solid;
+  outline-offset: -2px;
+}
+
+.accordion-trigger::after {
+  display: block;
+  position: absolute;
+  right: 16px;
+  top: 18px;
+  content: "";
+  width: 8px;
+  height: 8px;
+  border: 2px solid #000;
+  border-bottom: transparent;
+  border-left: transparent;
+  transform: rotate(135deg);
+  transition: transform var(--transitionLength) var(--transitionTiming);
+}
+
+.accordion-trigger-input:checked ~ .accordion-trigger::after {
+  transform: rotate(135deg) rotateX(180deg) rotateY(180deg) translateY(4px)
+    translateX(-4px);
+}
+
+.accordion-trigger-input:checked ~ .accordion-trigger {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  transition: box-shadow calc(var(--transitionLength) / 4)
+    var(--transitionTiming);
+}
+
+.accordion-content {
+  padding: 16px;
+  background: darkgray;
+}
+
+.accordion-content h2 {
+  padding-bottom: 0.75em;
+}
+
+.accordion-content p {
+  padding-bottom: 1.5em;
+}
+
+.accordion-content p:last-of-type {
+  padding-bottom: 0;
+}
+
+
+.center_div{
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
