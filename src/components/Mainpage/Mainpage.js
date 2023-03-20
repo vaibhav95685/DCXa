@@ -121,18 +121,6 @@ export default function Manpage() {
 
 </div>
 </div>
-{/* <div className='container'>
-<div className="row">
-    <div className="card">
-    <img src={card1} alt="" className="w-50" />
-      <p className='button_card'>Buy Now</p>
-    </div>
-    <div className="card">
-      <h2>Card 2</h2>
-      <p>Some text for card 2.</p>
-    </div>
-  </div>
-  </div> */}
 
 <div className="container mt-4 pt-4 pb-4 mb-4">
   <div className="row">
@@ -155,7 +143,7 @@ export default function Manpage() {
 </div>
 
 
-<div className="container mt-4 pt-4 b-4">
+<div className="container mt-4 pt-4">
   <div className="row">
     <div className="col-md-6 mt-4 pt-4">
    
@@ -174,7 +162,7 @@ export default function Manpage() {
     </div>
   </div>
 </div>
-
+ 
 <div className="container">
   
     <div className="col">
@@ -284,6 +272,7 @@ export default function Manpage() {
 </div>
 
 </div>
+
 <div className="container">
   
     <div className="col">
@@ -371,13 +360,15 @@ export default function Manpage() {
   <div className="col">
   <div className="text-center mt-4 pt-4">
   <div className="col">
-          <h1 className="display"><span className='golden-word'>Some</span>FAQ's</h1>
+          <h1 className="display"><span className='golden-word'>Some</span> FAQ's</h1>
         </div>
      
     </div>    
   </div>   
 
 </div>
+
+
 <div className="center_div">
 
     <div className="accordion">
@@ -492,7 +483,7 @@ export default function Manpage() {
         
       </div>
     </div>
-  </div>
+  </div> 
     </div>
   )
 }
