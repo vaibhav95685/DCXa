@@ -179,7 +179,7 @@ export default function Manpage() {
 </div>
 
 <div className="testimonials text-center">
-<div className="row align-items-center h-100">
+<div className=" align-items-center h-100">
         <div className="col">
           <h1 className="display">What Out Customers Says</h1>
         
@@ -294,12 +294,10 @@ export default function Manpage() {
 
 
 <div className="text-center mt-4 pt-4 pb-4 mb-4">
-<div className="row align-items-center h-100">
         <div className="col">
           <h1 className="display">Documents</h1>
         
         </div>
-      </div>
       </div>
 <div className="container mb-4 pb-4">
   <div className="row">
@@ -484,6 +482,8 @@ export default function Manpage() {
       </div>
     </div>
   </div> 
+
+  
     </div>
   )
 }
