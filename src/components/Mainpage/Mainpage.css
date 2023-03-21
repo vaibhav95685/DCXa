@@ -578,3 +578,30 @@ img.vert-move {
   0% { transform: translateY(0); }
   100% { transform: translateY(-40px); }
 }
+
+.heading{
+  font-weight: 900;
+  color: #fff;
+  text-align: center;
+  font-size: 25px;
+}
+.sub-text{
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+}
+.dark-container{
+  background-color: #3a3b3c;
+  padding: 50px;
+}
+.card-container{
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.img-cont{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}

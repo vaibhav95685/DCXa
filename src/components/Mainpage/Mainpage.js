@@ -4,6 +4,9 @@ import landingPage from '..//..//images/landing-page.png'
 import bg2 from '..//..//images/bg-2.png'
 import bg3 from '..//..//images/bg-3.jpg'
 import bg4 from '..//..//images/bg-4.jpg'
+import blockchain from '..//..//images/blockchain.png'
+import dcxa from '..//..//images/dcxa.png'
+import exchange from '..//..//images/exchange.png'
 import coin from '..//..//images/coin.png'
 import document from '..//..//images/document.png'
 import Privacypolicy from '..//..//images/privacypolicy.png'
@@ -472,18 +475,39 @@ export default function Manpage() {
                  style={{flex:"1",marginRight:"10px", color:"#000"}}>
                   DCXa protocol is used for instant and secure web 3.0 payment.
                 </div>
-               
+
               </div>
               </div>
-            
+
             </div>
           </div>
         </section>
-        
+
       </div>
     </div>
   </div> 
 
+<div className='card-container'>
+<div className='container'>
+<div className='row'>
+  <div className='col-xl-4 col-lg-4 col-md-4 dark-container'>
+  <img src={exchange} alt="document" className='w-25 img-cont' />
+    <div className='heading'>Exchange Balance </div>
+    <div className='sub-text'>DCXa facilitates all transactions as well as the conversion of DCXa token into other digital assets and vice-versa.</div> 
+  </div>
+  <div className='col-xl-4 col-lg-4 col-md-4 dark-container'>
+  <img src={blockchain} alt="document" className='w-25 img-cont' />
+    <div className='heading'>Blockchain</div>
+    <div className='sub-text'>Diverse Capital of Asiatic Exchanges is a place for future funding and powered by blockchain of BSC to maintain transaction transparency.</div> 
+  </div>
+  <div className='col-xl-4 col-lg-4 col-md-4 dark-container'>
+  <img src={dcxa} alt="document" className='w-25 img-cont' />
+    <div className='heading'>DCXa</div>
+    <div className='sub-text'>DCXa helps smooth substances of network with the process through which transaction verifies on the blockchain to receive cryptocurrency in exchange as rewards.</div> 
+  </div>
+</div>
+</div>
+</div>
   
     </div>
   )
