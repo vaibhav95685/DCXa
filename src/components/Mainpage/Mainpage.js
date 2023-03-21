@@ -4,9 +4,11 @@ import landingPage from '..//..//images/landing-page.png'
 import bg2 from '..//..//images/bg-2.png'
 import bg3 from '..//..//images/bg-3.jpg'
 import bg4 from '..//..//images/bg-4.jpg'
+import coin from '..//..//images/coin.png'
 import document from '..//..//images/document.png'
 import Privacypolicy from '..//..//images/privacypolicy.png'
 import { FaQuoteLeft } from 'react-icons/fa';
+
 
 
 
@@ -33,8 +35,7 @@ export default function Manpage() {
           <br /><br />
           <button className="custom-btn btn-3"><span>BUY NOW</span></button>
         </p>
-
-
+        
   </div>
     <div className="col-md-6 mt-4 pt-4">
     <div className="row align-items-center h-100">
@@ -44,8 +45,7 @@ export default function Manpage() {
       </div>
       
     </div>
-    
-  
+
   </div>
 </div>
 </div>
@@ -112,6 +112,7 @@ export default function Manpage() {
   <div className="col-md-6">
   <div className="row align-items-center h-100">
       <div className="col">
+      <img src={coin} alt="" className="coin vert-move" />
       <img src={bg2} alt="" className="w-100" />
       </div>
     </div>
@@ -487,3 +488,29 @@ export default function Manpage() {
     </div>
   )
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
